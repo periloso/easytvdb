@@ -166,6 +166,9 @@ class EasyTVDB(object):
 		return (sorted(resultList, key=lambda x: x[1], reverse=True))
 
 
+# UPDATES:		v. 1.1
+# easytv.getCache() returns the cached dictionary.
+#
 # This is just an example about how to use the library.
 # Everything is stored in self-allocating dictionaries.
 # Once learnt how to use it, you can easily remove those
@@ -189,7 +192,6 @@ class EasyTVDB(object):
 # doesn't have.
 # If you want to update the internal cache, you can pass the
 # parameter update=True to force it.
-#
 
 
 # This is just a library to prettify the output
