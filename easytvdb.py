@@ -25,6 +25,9 @@ class EasyTVDB(object):
 		self.searchurl = 'http://www.thetvdb.com/api/'
 		self.imageurl = 'http://www.thetvdb.com/banners/'
 		socket.setdefaulttimeout(10)
+	
+	def getCache(self):
+		return self.series
 		
 	def stripper(self, oldString):
 		return oldString.strip().replace(':','').replace('\\','').replace('!','').replace('?','').replace('/','').replace('.','').replace('|','').replace('<','').replace('>','').replace('\'','')
@@ -186,6 +189,7 @@ class EasyTVDB(object):
 # doesn't have.
 # If you want to update the internal cache, you can pass the
 # parameter update=True to force it.
+#
 
 
 # This is just a library to prettify the output
