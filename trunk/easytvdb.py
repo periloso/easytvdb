@@ -30,7 +30,7 @@ class EasyTVDB(object):
 		return self.series
 		
 	def stripper(self, oldString):
-		return oldString.strip().replace(':','').replace('\\','').replace('!','').replace('?','').replace('/','').replace('.','').replace('|','').replace('<','').replace('>','').replace('\'','')
+		return oldString.strip().replace(':',' -').replace('\\','').replace('?','').replace('/','').replace('.','').replace('|','').replace('<','').replace('>','').replace('"','')
 
 	def evaluateStrings(self, old, new):
 		oldSplit = self.stripper(old).lower().split(' ')
